@@ -49,18 +49,35 @@
 </nav>
 
   <div class="container" id="quiz">
-  <br>
-  <p>  what is your sex?</p>
-  <form>
-    <input type="radio" name="sex" value="male" > Male
     <br>
-    <input type="radio" name="sex" value="female"> Female
+    <p>  what is your sex?</p>
+    <form>
+      <input type="radio" name="sex" value="male" id="gender_male"> Male
+      <br>
+      <input type="radio" name="sex" value="female" id="gender_female"> Female
+      <br>
+      <br>
+      <button type="button" class="btn btn-default" onclick="checkResults()">Submit</button>
+    </form> 
     <br>
-    <br>
-    <button type="submit" class="btn btn-default">Submit</button>
-  </form> 
-
+    <p id="results"> lol </p>
   </div>
+
+
+  <script>
+    function checkResults(){
+      var score = 0;
+      if(document.getElementById('gender_male').checked) {
+        //Male radio button is checked
+        score++;
+      }else if(document.getElementById('gender_female').checked) {
+        //Female radio button is checked
+      }
+      document.getElementById('results').innerHTML = score;
+    }
+    
+  </script>
+
   <script src="./index_files/jquery-1.10.2.min.js"></script>
   <script src="./index_files/bootstrap.min.js"></script>
   <script src="./index_files/custom.js"></script>
