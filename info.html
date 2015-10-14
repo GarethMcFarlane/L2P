@@ -10,6 +10,8 @@
 <script src="./index_files/jquery-1.10.2.min.js"></script>
 
 
+
+
 <style>
    body {
     position: relative;
@@ -22,16 +24,18 @@
       height: 250px;
   }
 
-
+  .scrollsection {
+    padding-top:50px;
+  }
 </style>
+
+
+
 <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
       <script src="../bower_components/html5shiv/dist/html5shiv.js"></script>
       <script src="../bower_components/respond/dest/respond.min.js"></script>
       <![endif]-->
-<script>
-//$('body').scrollspy({target: '#myScrollspy', offset:50});
-</script>
     </head>
     <body data-spy="scroll" data-target="#myScrollspy" data-offset="200">
       <nav class="navbar navbar-default navbar-fixed-top">
@@ -52,6 +56,7 @@
           <ul class="nav navbar-nav">
             <li><a href="index.html">Home</a></li>  
             <li class="active"><a href="#">Posture Information<span class="sr-only">(current)</span></a></li>  
+            <li><a href="exercises.html">Exercises</a></li>
             <li><a href="quiz.html">Quiz</a></li>
             <li><a href="calculator.html">Ergonomics Calculator</a></li>
             <li><a href="about.html">About</a></li>
@@ -71,29 +76,39 @@
       <div class="row">
         <nav class="col-sm-3" id="myScrollspy">
           <ul class="nav nav-pills nav-stacked">
-            <li class="active"><a href="#section1">Section 1</a></li>
-            <li><a href="#section2">Section 2</a></li>
-            <li><a href="#section3">Section 3</a></li>
-            <li><a href="#seciont4">Section 4</a></li>
+            <li class="active"><a href="#neck">Neck</a></li>
+            <li><a href="#upperspine">Upper Spine</a></li>
+            <li><a href="#lowerspine">Lower Spine</a></li>
+            <li><a href="#pelvis">Pelvis</a></li>
+            <li><a href="#knees">Knees</a></li>
+            <li><a href="#feet">Feet</a></li>
           </ul>
         </nav>
         <div class="col-sm-9">
-          <div id="section1">    
-            <h1>Section 1</h1>
+          <div class="scrollsection" id="neck">    
+            <h1>Neck</h1>
             <p>Try to scroll this sTry to scroll this section and look at the navigation list while scrolling!</p>
           </div>
-          <div id="section2"> 
-            <h1>Section 2</h1>
+          <div class="scrollsection" id="upperspine"> 
+            <h1>Upper Spine</h1>
             <p>Try to scroll this sTry to scroll this section and look at the navigation list while scrolling!</p>
           </div>        
-          <div id="section3">         
-            <h1>Section 3</h1>
+          <div class="scrollsection" id="lowerspine">         
+            <h1>Lower Spine</h1>
             <p>Try to scroll this sTry to scroll this section and look at the navigation list while scrolling!</p>
           </div>
-          <div id="section4">         
-            <h1>Section 4</h1>
+          <div class="scrollsection" id="pelvis">         
+            <h1>Pelvis</h1>
+            <p>Try to scroll this sTry to scroll this section and look at the navigation list while scrolling!</p>
+          </div>
+          <div class="scrollsection" id="knees">         
+            <h1>Knees</h1>
             <p>Try to scroll this section and look at the navigation list while scrolling!</p>
-          </div>      
+          </div>   
+          <div class="scrollsection" id="feet">         
+            <h1>Feet</h1>
+            <p>Try to scroll this section and look at the navigation list while scrolling!</p>
+          </div>     
         </div>
       </div>
     </div>
