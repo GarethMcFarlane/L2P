@@ -12,6 +12,16 @@
       <script src="../bower_components/html5shiv/dist/html5shiv.js"></script>
       <script src="../bower_components/respond/dest/respond.min.js"></script>
     <![endif]-->
+    
+    
+    <script>
+    function writeText(txt) {
+        document.getElementById("bodypart_desc").innerHTML = txt;
+    }
+    
+    </script>
+    
+    
   </head>
 
   <body>
@@ -54,21 +64,22 @@
 <div class="container-fluid">
 
   <div class="page-header">
-    <h3>Home</h>
+    <h3>Welcome to L2P</h>
   </div>
-  <p align="center">Welcome to L2P.  Please select a body part below to learn about corresponding exercises and information or select from the tabs above.</p>
-  <img src="goodposture.jpg" class="img-responsive center-block" alt="Posture" usemap="#posturemap">
+  
+    <div>
+    <img src="goodposture.jpg" class="img-responsive center-block" alt="Posture" usemap="#posturemap">
 
-  <map name="posturemap">
-  <area shape="circle" coords="168,89,15" href="info.html#neck" alt="Neck">
-  <area shape="circle" coords="164,128,15" href="info.html#upperspine" alt="Upper Spine">
-  <area shape="circle" coords="171,221,15" href="info.html#lowerspine" alt="Lower Spine">
-  <area shape="circle" coords="170,266,15" href="info.html#pelvis" alt="Pelvis">
-  <area shape="circle" coords="298,266,15" href="info.html#knees" alt="Knee">
-  <area shape="circle" coords="298,432,15" href="info.html#feet" alt="Foot">
-  </map>
-
-
+      <map name="posturemap">
+      <area shape="circle" coords="168,89,15" href="info.html#neck" alt="Neck" onmouseout="writeText('Select a body part above.')" onmouseover="writeText('Neck')" >
+      <area shape="circle" coords="164,128,15" href="info.html#upperspine" alt="Upper Spine" onmouseout="writeText('Select a body part above.')" onmouseover="writeText('Upper Spine')" >
+      <area shape="circle" coords="171,221,15" href="info.html#lowerspine" alt="Lower Spine" onmouseout="writeText('Select a body part above.')" onmouseover="writeText('Lower Spine')" >
+      <area shape="circle" coords="170,266,15" href="info.html#pelvis" alt="Pelvis" onmouseout="writeText('Select a body part above.')" onmouseover="writeText('Pelvis')" >
+      <area shape="circle" coords="298,266,15" href="info.html#knees" alt="Knee" onmouseout="writeText('Select a body part above.')" onmouseover="writeText('Knee')" >
+      <area shape="circle" coords="298,432,15" href="info.html#feet" alt="Foot" onmouseout="writeText('Select a body part above.')" onmouseover="writeText('Foot')" >
+      </map>
+    </div>
+<p align="center" id="bodypart_desc">Select a body part above.</p>
 </div>
 
 
