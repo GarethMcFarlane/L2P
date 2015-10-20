@@ -49,9 +49,12 @@
   </nav>
 
 
-  <div class="container" id="quiz">
+  <div class="container-fluid" id="quiz">
+    <div class="page-header">
+    <h3>Ergonomics Calculator</h>
+  </div>
     <div class="row">
-      <div class="col-sm-2">
+      <div class="col-sm-4">
         <br>
         <form role="form">
           <div class="form-group">
@@ -59,26 +62,30 @@
             <input type="number" class="form-control" id="height">
           </div>
           <div class="form-group">
-            <label >Dick 2 (cm):</label>
-            <input type="number" class="form-control" id="dick2">
+            <label >Calf (cm):</label>
+            <input type="number" class="form-control" id="calf">
           </div>
-          <div class="form-group">
-            <label >Dick 3 (cm):</label>
-            <input type="number" class="form-control" id="dick3">
-          </div>
+          
           <br>
           <br>
           <button type="button" class="btn btn-default" onclick="checkResults()">Submit</button>
         </form> 
         <br>
-        <p id="results"> Results </p>
+
       </div>
+        <div class="col-sm-8">
+            <img src="goodpostureexplained.png" class="img-responsive center-block" alt="Posture">
+        </div>
     </div>
+      <div>
+        <h4>Ergonomics Results:</h4>
+        <p id="results"></p>
+      </div>
   </div>
 
   <script>
     function checkResults(){
-      document.getElementById('results').innerHTML = "HAHAHAHAH";
+      document.getElementById('results').innerHTML = "Your seat height should be at approximately 30cm to match your calf length.  Ensure that your back rest is at at least 60cm to support your back.  Your desk and arm position should be approximately 95cm above the ground.";
     }
     
   </script>
