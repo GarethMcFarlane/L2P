@@ -68,7 +68,7 @@
           
           <br>
           <br>
-          <button type="button" class="btn btn-default" onclick="checkResults()">Submit</button>
+          <button type="button" class="btn btn-default" onclick="checkResults(document.getElementById('calf').value,document.getElementById('height').value)">Submit</button>
         </form> 
         <br>
 
@@ -84,8 +84,11 @@
   </div>
 
   <script>
-    function checkResults(){
-      document.getElementById('results').innerHTML = "Your seat height should be at approximately 30cm to match your calf length.  Ensure that your back rest is at at least 60cm to support your back.  Your desk and arm position should be approximately 95cm above the ground.";
+    function checkResults(calf,height){
+        calf = parseInt(calf) * 0.7;
+        height = calf + parseInt(height) - 10;
+        var total = calf + height - 30;
+        document.getElementById('results').innerHTML = "Your seat height should be at approximately " + calf + "cm for your calf length.  Ensure that your back rest is at at least " + height + "cm to support your back.  Your desk and arm position should be approximately " + total + "cm above the ground.";
     }
     
   </script>
