@@ -68,7 +68,7 @@
       <br>
       <input type="radio" name="FHP2" > Family History Partnership
       <br>
-      <input type="radio" name="FHP3" id"q2"> Forward Neck Posture
+      <input type="radio" name="FHP3" id"q2"> Forward Head Posture
       <br>
       <br>
 
@@ -104,6 +104,7 @@
 
       <p id="results"></p>
       <br>
+      <p id="average"></p>  
 
     </form> 
     
@@ -112,7 +113,8 @@
 
   <script>
     function checkResults(){
-      document.getElementById('results').innerHTML = "Congrats you scored 5/5!";
+      document.getElementById('results').innerHTML = "Congrats, you scored 5/5!";
+    document.getElementById('average').innerHTML = "Average quiz score: 4/5";
     }
     
   </script>
