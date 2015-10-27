@@ -52,11 +52,11 @@
     <br>
     <form>
       <p>Which is not a symptom of bad posture?</p>
-      <input type="radio" name="symptom1" > Potbelly
+      <input type="radio" name="symptom1"> Potbelly
       <br>
       <input type="radio" name="symptom2" > Back pain
       <br>
-      <input type="radio" name="symptom3" > Period Cramps
+      <input type="radio" name="symptom3" id"q1"> Period Cramps
       <br>
       <br>
 
@@ -65,28 +65,51 @@
       <br>
       <input type="radio" name="FHP2" > Family History Partnership
       <br>
-      <input type="radio" name="FHP3" > Forward Neck Posture
+      <input type="radio" name="FHP3" id"q2"> Forward Neck Posture
       <br>
       <br>
 
       <p>Which of the below is NOT a cause of exaggerated curvature</p>
-      <input type="radio" name="FHP1" >  Excessive amounts of time being poorly seated
+      <input type="radio" name="curve1" >  Excessive amounts of time being poorly seated
       <br>
-      <input type="radio" name="FHP2" > Muscular imbalances
+      <input type="radio" name="curve2" > Muscular imbalances
       <br>
-      <input type="radio" name="FHP3" > Sleeping on your side
+      <input type="radio" name="curve3" id"q3"> Sleeping on your side
+      <br>
+
+      <p>Which is the correct definition of Anterior Pelvic Tilt</p>
+      <input type="radio" name="APT1" >  When the front of the pelvis RISES and the back of the pelvis DROPS. 
+      <br>
+      <input type="radio" name="APT2" > A condition in which the spine in the lower back has an excessive curvature. 
+      <br>
+      <input type="radio" name="APT3" id"q4"> When the front of the pelvis DROPS and the back of the pelvis RISES. 
+      <br>
+
+      <p>What does Lordosis mean?</p>
+      <input type="radio" name="Lordosis1" id"q5">  Swayback. 
+      <br>
+      <input type="radio" name="Lordosis2" > Exaggerated curvature of the spine as in the “hunchback” posture. 
+      <br>
+      <input type="radio" name="Lordosis3" > Posterior pelvic tilt. 
       <br>
 
       <br>
       <button type="button" class="btn btn-default" onclick="checkResults()">Submit</button>
+
+      <br>
+      <br>
+
+      <p id="results"> Hihi</p>
+      <br>
+
     </form> 
-    <p id="results"> </p>
+    
   </div>
 
 
   <script>
     function checkResults(){
-      document.getElementById('results').innerHTML = "Nice! You scored 3/3!";
+      document.getElementById('results').innerHTML = "Congrats you scored 5/5!";
     }
     
   </script>
