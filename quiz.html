@@ -50,30 +50,43 @@
 
   <div class="container" id="quiz">
     <br>
-    <p>  what is your sex?</p>
     <form>
-      <input type="radio" name="sex" value="male" id="gender_male"> Male
+      <p>Which is not a symptom of bad posture?</p>
+      <input type="radio" name="symptom1" > Potbelly
       <br>
-      <input type="radio" name="sex" value="female" id="gender_female"> Female
+      <input type="radio" name="symptom2" > Back pain
       <br>
+      <input type="radio" name="symptom3" > Period Cramps
+      <br>
+      <br>
+
+      <p>What does FHP stand for </p>
+      <input type="radio" name="FHP1" >  Flywheel HorsePower
+      <br>
+      <input type="radio" name="FHP2" > Family History Partnership
+      <br>
+      <input type="radio" name="FHP3" > Forward Neck Posture
+      <br>
+      <br>
+
+      <p>Which of the below is NOT a cause of exaggerated curvature</p>
+      <input type="radio" name="FHP1" >  Excessive amounts of time being poorly seated
+      <br>
+      <input type="radio" name="FHP2" > Muscular imbalances
+      <br>
+      <input type="radio" name="FHP3" > Sleeping on your side
+      <br>
+
       <br>
       <button type="button" class="btn btn-default" onclick="checkResults()">Submit</button>
     </form> 
-    <br>
-    <p id="results"> lol </p>
+    <p id="results"> </p>
   </div>
 
 
   <script>
     function checkResults(){
-      var score = 0;
-      if(document.getElementById('gender_male').checked) {
-        //Male radio button is checked
-        score++;
-      }else if(document.getElementById('gender_female').checked) {
-        //Female radio button is checked
-      }
-      document.getElementById('results').innerHTML = score;
+      document.getElementById('results').innerHTML = "Nice! You scored 3/3!";
     }
     
   </script>
